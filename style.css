@@ -15,6 +15,11 @@ margin: 0;
 padding: 0;
 }
 
+.headline-container {
+height: 60vh;
+width: 100vw;
+}
+
 .logo {
 width: 80px;
 height: 20px;
@@ -38,6 +43,10 @@ max-width: 40px;
 padding-left: 65%;
 padding-top: 4%;
 }
+
+html {
+    background: #e5e5e5;
+  }
 
 #background {
 position: absolute;
@@ -130,18 +139,18 @@ color: #7f8cff;
 .icons_ul ul flex{
 display: flex;
 align-items: center;
-justify-content: left;
 padding-left: 8.5%;
-margin-bottom: 0;
-margin-left: 26px;
 }
 
-.icons_li {
+.social-media {
+display: flex;
 margin: 1.3rem 0 1rem;
 align-items: center;
 width: 11rem;
 }
 
-.social-media {
+.icons_li {
+display: flex;
 margin-left: 26px;
+margin-bottom: 20px;
 }
