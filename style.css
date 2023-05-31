@@ -1,10 +1,39 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "Poppins";
+	font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
+
+.logo {
+width: 80px;
+height: 20px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #6070FF;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+#background {
+position: absolute;
+width: 375px;
+height: 718px;
+left: 0px;
+top: 0px;
+background: #FFFFFF;
+}
+
 body {
-	background-color: #f7f7f9;
+	overflow-x: hidden;
+    background-color: #f7f7f9;
 	height: 100vh;
 }
 
@@ -25,4 +54,45 @@ body {
 
 .menu {
     padding: 8px;
+}
+
+.first-title {
+width: 327px;
+height: 150px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+display: flex;
+align-items: center;
+color: #172B4D;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.description {
+width: 327px;
+height: 146px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #344563;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.connect-us {
+    text-transform: uppercase;
+}
+
+.icons_ul ul flex{
+margin: 1.3rem 0 1rem;
+align-items: center;
+justify-content: space-between;
+width: 11rem;
 }
