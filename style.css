@@ -10,7 +10,7 @@ width: 80px;
 height: 20px;
 font-family: 'Poppins';
 font-style: normal;
-font-weight: 700;
+font-weight: 800;
 font-size: 18px;
 line-height: 20px;
 display: flex;
@@ -19,8 +19,15 @@ text-align: center;
 color: #6070FF;
 flex: none;
 order: 0;
+text-decoration: none;
 flex-grow: 0;
 }
+
+.menu {
+    max-width: 40px;
+    padding-left: 65%;
+    padding-top: 4%;
+  }
 
 #background {
 position: absolute;
@@ -84,15 +91,31 @@ color: #344563;
 flex: none;
 order: 1;
 flex-grow: 0;
+margin: 10px 0;
 }
 
 .connect-us {
     text-transform: uppercase;
+    color: #7f8cff;
 }
 
-.icons_ul ul flex{
+.icons_ul {
 margin: 1.3rem 0 1rem;
 align-items: center;
 justify-content: space-between;
 width: 11rem;
 }
+
+.icons_li {
+    margin: 1.3rem 0 1rem;
+    align-items: left;
+    justify-content: space-between;
+    width: 11rem;
+    }
+
+.head__icons {
+        margin: 0.5rem 0;
+        align-items: center;
+        justify-content: space-between;
+        width: 11rem;
+      }
