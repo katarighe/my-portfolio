@@ -97,7 +97,7 @@ Mohamed Aden Ighe: My personal portfolio is a...
 
 ### Key Features <a name="key-features"></a>
 
-> There are three key features used in my portfolio. 
+> There are three key features used in my personal portfolio project. 
 
 - **The ability to see my project.**
 - **The ability to see my work history.**
@@ -156,6 +156,8 @@ Example commands:
 
 Install this project with:
 
+- Programs used to install this project will be listed soon. 
+
 <!--
 Example command:
 
@@ -168,6 +170,9 @@ Example command:
 ### Usage
 
 To run the project, execute the following command:
+
+- The commands used to execture the project will be listed soon. 
+
 
 <!--
 Example command:
@@ -245,7 +250,7 @@ Contributions, issues, and feature requests are welcome!
 
 > Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project send me a ⭐️ on my Github page!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
