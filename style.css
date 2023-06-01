@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primaryColor: #6070ff;
+  --headingtextColor: #172b4d;
+  --bodyTextColor: #344563;
+  --backgroundColor: #f7f7f9;
+}
+
+body {
+  background-color: #f7f7f9;
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--headingtextColor);
+  margin-top: 100px;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 375px) {
+  #part1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 4px;
+  }
+
+  .logo-placeholder {
+    padding: 10px 12px;
+    margin-left: 12px;
+  }
+
+  .logo {
+    color: var(--primaryColor);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  .menu {
+    padding: 8px;
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+    cursor: pointer;
+  }
+
+  .material-symbols-outlined {
+    color: var(--primaryColor);
+  }
+
+  #headline1 {
+    padding-top: 2rem;
+    min-height: 113vh;
+    height: calc(100vh - 48px);
+    background-color: white;
+    display: flex;
+    background-image: url("./images/background-image.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .headline {
+    width: 327px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    padding-bottom: 30px;
+  }
+
+  .connect {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #7f8cff;
+    cursor: pointer;
+  }
+
+  .social__icons__ul {
+    display: flex;
+    cursor: pointer;
+    margin: 1.3rem 0 1rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 13rem;
+  }
+
+  .social__icons__link img {
+    transition: transform 0.5s;
+  }
+
+  .head__icons__link img:hover {
+    transform: scale(1.5);
+  }
+
+  .social__icons__link img:hover {
+    transform: scale(1.5);
+  }
+}
