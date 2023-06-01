@@ -18,11 +18,18 @@ body {
   height: 100vh;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
   font-weight: 900;
   font-size: 40px;
   line-height: 52px;
   color: var(--headingtextColor);
+  margin-top: 100px;
 }
 
 p {
@@ -34,9 +41,7 @@ p {
 }
 
 @media screen and (min-width: 340px) {
-
-  /* stylelint-disable-next-line rule-empty-line-before */
-  #header {
+  #part1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -73,15 +78,15 @@ p {
 
   #headline1 {
     padding-top: 2rem;
+    min-height: 113vh;
     height: calc(100vh - 48px);
     background-color: white;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(./images/background-image.svg);
+    background-image: url("./images/background-image.svg");
     background-repeat: no-repeat;
-    background-size: auto;
-    border-radius: 0 0 0 5rem;
+    background-size: contain;
+    object-fit: cover;
+    border-radius: 15px;
   }
 
   .headline {
@@ -90,8 +95,8 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2rem;
     padding: 1rem;
+    padding-bottom: 30px;
   }
 
   .connect {
@@ -101,9 +106,24 @@ p {
     cursor: pointer;
   }
 
-  .social-icons {
+  .social__icons__ul {
     display: flex;
-    gap: 1rem;
     cursor: pointer;
+    margin: 1.3rem 0 1rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 13rem;
+  }
+
+  .social__icons__link img {
+    transition: transform 0.5s;
+  }
+
+  .head__icons__link img:hover {
+    transform: scale(1.5);
+  }
+
+  .social__icons__link img:hover {
+    transform: scale(1.5);
   }
 }
