@@ -1,10 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-* { margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
 
-:root { --primaryColor: #6070ff; --headingtextColor: #172b4d; --bodyTextColor: #344563; --backgroundColor: #f7f7f9; }    
+:root {
+  --primaryColor: #6070ff;
+  --headingtextColor: #172b4d;
+  --bodyTextColor: #344563;
+  --backgroundColor: #f7f7f9; }    
 
-body { background-color: #f7f7f9; height: 100vh; } 
+body { 	
+  background-color: #f7f7f9; 
+  height: 100vh; } 
 
 h1 {
   font-weight: 900;
@@ -77,4 +87,5 @@ p {
 
 .social-icons {
   display: flex;
-  gap: 1rem; } }
+  gap: 1rem; } 
+}
