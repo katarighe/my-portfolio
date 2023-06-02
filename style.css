@@ -18,40 +18,6 @@ body {
   height: 100vh;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
-button.small {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  border: none;
-}
-
-button.secondary {
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #396df2;
-  padding: 12px;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  background: none;
-}
-
-.counter {
-  height: 10px;
-  width: 10px;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -64,21 +30,6 @@ h1 {
   line-height: 52px;
   color: var(--headingtextColor);
   margin-top: 100px;
-}
-
-h2 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #172b4d;
-}
-
-h5 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
 }
 
 p {
@@ -111,10 +62,6 @@ p {
     font-size: 18px;
     line-height: 20px;
     cursor: pointer;
-  }
-
-  #Menu {
-    display: none;
   }
 
   .menu {
@@ -159,7 +106,7 @@ p {
     cursor: pointer;
   }
 
-  .social_icons_ul {
+  .social__icons__ul {
     display: flex;
     cursor: pointer;
     margin: 1.3rem 0 1rem;
@@ -168,158 +115,15 @@ p {
     width: 13rem;
   }
 
-  .social_icons_link img {
+  .social__icons__link img {
     transition: transform 0.5s;
   }
 
-  .social_icons_link img:hover {
+  .head__icons__link img:hover {
     transform: scale(1.5);
   }
-}
 
-#works {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 114px 24px;
-  gap: 88px;
-
-  .works_card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
-    gap: 12px;
-    background: white;
-    border: 1px solid #def1e6;
-    border-radius: 16px;
-
-    .snapshoot_portpolio {
-      width: 295px;
-      height: 220px;
-      background: url(./images/SnapshootPortfolio.svg);
-      border-radius: 8px;
-    }
-
-    .works_card_detail {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 12px;
-      width: 100%;
-
-      .works_card_title {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-        .works_card_history {
-          display: flex;
-          align-items: center;
-          gap: 6px;
-
-          .works_card_history_detail {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 8px 0.2px;
-          }
-        }
-      }
-
-      .works_card_tags {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 8px;
-
-        .tag_work {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          padding: 4px 12px;
-          background: #ebebff;
-          border-radius: 8px;
-        }
-      }
-    }
-  }
-}
-
-#about_myself {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 114px 24px;
-  gap: 24px;
-  background: white;
-  border-radius: 0 5rem 0 0;
-
-  .myself {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-
-    .lets_connect {
-      color: var(--primaryColor);
-    }
-
-    .social_icons {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-
-      .icons {
-        width: 24px;
-        height: 24px;
-      }
-    }
-  }
-
-  .myskills {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .languages {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .lan_head {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem 0.1px;
-      }
-
-      .lan_list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        width: 100%;
-
-        .lan_list_detail {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          width: 100%;
-          padding: 8px 0.1px;
-          background: #f7f7f9;
-          border-radius: 8px;
-          gap: 1rem;
-
-          .list_img {
-            padding-left: 10px;
-            width: 48px;
-            height: 48px;
-          }
-        }
-      }
-    }
+  .social__icons__link img:hover {
+    transform: scale(1.5);
   }
 }
