@@ -23,7 +23,7 @@ img {
   height: auto;
 }
 
-button.small {
+.small {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -32,7 +32,7 @@ button.small {
   border: none;
 }
 
-button.secondary {
+button:enabled {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -47,7 +47,7 @@ button.secondary {
   background: none;
 }
 
-button.hover {
+button:hover {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -56,11 +56,12 @@ button.hover {
   text-align: center;
   letter-spacing: 0.03em;
   color: #ffff;
+  background: #6070ff;
+  box-shadow: 0.1px 8px 16px rgba(64, 83, 252, 0.24);
   padding: 12px;
-  background: none;
 }
 
-button.pressed {
+button:active {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
