@@ -47,6 +47,34 @@ button.secondary {
   background: none;
 }
 
+button.hover {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffff;
+  padding: 12px;
+  background: none;
+}
+
+button.pressed {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background: none;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -173,18 +201,14 @@ p {
 }
 
 #works {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+  display: grid;
   padding: 114px 24px;
   gap: 88px;
 
   .works_card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
     padding: 16px;
-    gap: 12px;
+    grid-gap: 12px;
     background: white;
     border: 1px solid #def1e6;
     border-radius: 16px;
@@ -197,41 +221,35 @@ p {
     }
 
     .works_card_detail {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 12px;
+      display: grid;
+      grid-gap: 12px;
       width: 100%;
 
       .works_card_title {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        display: grid;
+        align-items: start;
 
         .works_card_history {
-          display: flex;
+          display: grid;
+          grid-auto-flow: column;
           align-items: center;
+          justify-content: start;
           gap: 6px;
 
           .works_card_history_detail {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
             padding: 8px 0.2px;
           }
         }
       }
 
       .works_card_tags {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-auto-flow: column;
         align-items: center;
+        justify-content: start;
         gap: 8px;
 
         .tag_work {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
           padding: 4px 12px;
           background: #ebebff;
           border-radius: 8px;
@@ -242,19 +260,15 @@ p {
 }
 
 #about_myself {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
   padding: 114px 24px;
   gap: 24px;
   background: white;
   border-radius: 0 5rem 0 0;
 
   .myself {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+    display: grid;
+    grid-gap: 12px;
 
     .lets_connect {
       color: var(--primaryColor);
@@ -262,7 +276,9 @@ p {
 
     .social_icons {
       list-style: none;
-      display: flex;
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: start;
       gap: 1rem;
 
       .icons {
@@ -274,35 +290,35 @@ p {
 
   .myskills {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
 
     .languages {
       width: 100%;
-      display: flex;
-      flex-direction: column;
+      display: grid;
       align-items: center;
 
       .lan_head {
         width: 100%;
-        display: flex;
+        grid-auto-flow: column;
         justify-content: space-between;
+        display: grid;
         padding: 1rem 0.1px;
+        align-items: center;
       }
 
       .lan_list {
-        display: flex;
-        flex-direction: column;
+        display: grid;
         align-items: center;
         gap: 12px;
         width: 100%;
 
         .lan_list_detail {
-          display: flex;
-          justify-content: flex-start;
+          display: grid;
           align-items: center;
           width: 100%;
+          grid-auto-flow: column;
+          justify-content: start;
           padding: 8px 0.1px;
           background: #f7f7f9;
           border-radius: 8px;
