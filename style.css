@@ -337,18 +337,23 @@ p {
 }
 
 #contact {
-  display: flex;
-  background-color: #6070ff;
-  background-image: url(.images/contact-form-background.svg);
+  background-size: 100% 100%;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-image: url(./images/contact-form-background.svg);
   border-top-left-radius: 8rem;
   padding: 8rem 0;
   text-align: center;
 }
 
 .shapes {
-  background-image: url(.images/header-shapes-mobile.svg);
-  position: relative;
-  background-size: 100%;
+  width: -webkit-fill-available;
+  background-position: center center;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(./images/header-shapes-mobile.svg);
+  padding: 8rem 0;
 }
 
 #contact h2 {
