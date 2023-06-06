@@ -256,5 +256,32 @@
     </ul>
   </ul>
    </section>
-  </body>
+<section id="contact">
+  <div class="contact_container">
+    <h2>Contact Me</h2>
+    <p class="contact_desc">
+    If you have an application you are interested in developing, a
+    feature that you need built or a project that needs coding. I'd love
+    to help with it.
+  </p>
+  <form id="form" action="https://formspree.io/f/mlekylyd" method="post">
+    <ul class="form_ul">
+      <li>
+        <input type="text" id="fname" class="contact_name" name="contact_name" placeholder="Enter your name" required maxlength="30" />
+        </li>
+        <li>
+        <input type="email" id="email" class="contact_email" placeholder="Enter your email" name="contact_email" required/>
+        </li>
+        <li>
+        <textarea id="message" name="contact_message" placeholder="Write your message here" cols="30" rows="8" maxlength="500" required></textarea>
+     </li>
+    <li>
+       <input type="submit" value="Get In Touch" />
+       <p class="error"></p>
+     </li>
+    </ul>
+  </form>
+  </div>
+ </section>
+ </body>
 </html>

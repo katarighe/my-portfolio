@@ -335,3 +335,8 @@ p {
     }
   }
 }
+
+/* Contact form */
+.contact::before {
+  padding: 3.5rem;
+}
