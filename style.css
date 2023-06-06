@@ -339,9 +339,16 @@ p {
 #contact {
   display: flex;
   background-color: #6070ff;
+  background-image: url(.images/contact-form-background.svg);
   border-top-left-radius: 8rem;
   padding: 8rem 0;
   text-align: center;
+}
+
+.shapes {
+  background-image: url(.images/header-shapes-mobile.svg);
+  position: relative;
+  background-size: 100%;
 }
 
 #contact h2 {
