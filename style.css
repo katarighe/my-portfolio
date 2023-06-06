@@ -385,27 +385,21 @@ input::placeholder {
   line-height: 24px;
 }
 
-.form_ul .btn {
-  display: flex;
-  flex-direction: row;
+.form_input .btn {
+  margin: 1rem 0;
   justify-content: center;
   padding: 8px 8px;
   position: absolute;
+  letter-spacing: 0.03em;
   width: 142px;
   height: 48px;
   left: 24px;
+  color: #6070ff;
   background-color: white;
+  border: none;
   border-radius: 8px;
   margin-bottom: 4rem;
-}
-
-.btnhover {
-  color: #fff;
-  background-color: #7f8cff;
-}
-
-.btn:active {
-  color: #fff;
-  padding: 12px;
-  border-radius: 8px;
+  font-size: 17px;
+  line-height: 24px;
+  max-width: 142px;
 }
