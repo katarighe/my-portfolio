@@ -337,23 +337,14 @@ p {
 }
 
 #contact {
-  background-size: 100% 100%;
-  background-position: top left;
+  background-color: var(--primaryColor);
+  background-size: contain;
+  background-position: 100% 100%;
   background-repeat: no-repeat;
-  background-image: url(./images/contact-form-background.svg);
   border-top-left-radius: 8rem;
   padding: 8rem 0;
   text-align: center;
-}
-
-.shapes {
-  width: -webkit-fill-available;
-  background-position: center center;
-  height: auto;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(./images/header-shapes-mobile.svg);
-  padding: 8rem 0;
+  background-image: url(./images/contact_form_shapes-mobile_2x.png);
 }
 
 #contact h2 {
@@ -394,15 +385,27 @@ input::placeholder {
   line-height: 24px;
 }
 
-.contact-btn {
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
+.form_ul .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 8px 8px;
+  position: absolute;
   width: 142px;
-  float: left;
-  margin-left: 2rem;
-  color: #6070ff;
-  background: #ffff;
-  border: none;
-  box-shadow: 0.1px 8px 16px rgba(64, 83, 252, 0.24);
+  height: 48px;
+  left: 24px;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 4rem;
+}
+
+.btnhover {
+  color: #fff;
+  background-color: #7f8cff;
+}
+
+.btn:active {
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
 }
