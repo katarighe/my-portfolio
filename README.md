@@ -244,6 +244,6 @@ I would like to thank... -->
 
 ## 📝 License <a name="license"></a>
 
-This project is <a href="https://github.com/katarighe/my-portfolio/blob/main/MIT.md" MIT licensed</a>.
+This project is <a href="https://github.com/katarighe/my-portfolio/blob/main/MIT.md">MIT licensed</a>.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
