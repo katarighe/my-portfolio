@@ -407,3 +407,67 @@ input::placeholder {
   line-height: 24px;
   max-width: 142px;
 }
+
+/* Start of the desktop process */
+@media only screen and (min-width: 1024px) {
+  .headline1 {
+    background-image: url(./images/header-background-desktop.png);
+    background-size: contain;
+  }
+
+  .headline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
+  }
+
+  .works {
+    height: 358px;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    background-color: white;
+  }
+
+  .works_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-img {
+    height: 330px;
+  }
+
+  .works_card_title {
+    margin-left: 2rem;
+  }
+
+  .works_card_tags {
+    margin-left: 31.5rem;
+  }
+
+  .works_card_tags-2 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .works_card_history_detail {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .works_card_tags-two {
+    margin-left: 6rem;
+  }
+
+  .myself {
+    display: flex;
+    padding: 7.125rem;
+  }
+
+  .tag_work {
+    padding: 8.8rem;
+  }
+}
