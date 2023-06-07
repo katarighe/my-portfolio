@@ -1,5 +1,7 @@
+/* Import "Poppins" font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+/* Main */
 * {
   margin: 0;
   padding: 0;
@@ -113,6 +115,7 @@ p {
   line-height: 24px;
 }
 
+/* Mobile website mode */
 @media screen and (min-width: 375px) {
   #part1 {
     display: flex;
@@ -153,7 +156,8 @@ p {
     color: var(--primaryColor);
   }
 
-  #headline1 {
+  /* Homepage */
+  #introduction {
     padding-top: 2rem;
     min-height: 113vh;
     height: calc(100vh - 48px);
@@ -201,6 +205,7 @@ p {
   }
 }
 
+/* My Works */
 #works {
   display: grid;
   padding: 114px 24px;
@@ -260,14 +265,15 @@ p {
   }
 }
 
-#about_myself {
+/* About Myself */
+#about {
   display: grid;
   padding: 114px 24px;
   gap: 24px;
   background: white;
   border-radius: 0 5rem 0 0;
 
-  .myself {
+  .about_myself {
     display: grid;
     grid-gap: 12px;
 
@@ -336,6 +342,7 @@ p {
   }
 }
 
+/* Contact Me */
 #contact {
   background-color: var(--primaryColor);
   background-size: contain;
@@ -408,10 +415,10 @@ input::placeholder {
   max-width: 142px;
 }
 
-/* Start of the desktop process */
+/* Desktop web version */
 @media only screen and (min-width: 1024px) {
-  .headline1 {
-    background-image: url(./images/header-background-desktop.png);
+  #introduction {
+    background-image: url(./images/header-shapes-desktop.png);
     background-size: contain;
   }
 
@@ -436,7 +443,7 @@ input::placeholder {
     align-items: center;
   }
 
-  .article-img {
+  .works_img {
     height: 330px;
   }
 
@@ -448,26 +455,27 @@ input::placeholder {
     margin-left: 31.5rem;
   }
 
-  .works_card_tags-2 {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
   .works_card_history_detail {
     text-align: center;
     margin-top: 0;
   }
 
-  .works_card_tags-two {
-    margin-left: 6rem;
+  .tag_work {
+    padding: 8.8rem;
   }
 
-  .myself {
+  .about_myself {
     display: flex;
     padding: 7.125rem;
   }
 
-  .tag_work {
-    padding: 8.8rem;
+  #about {
+    background-image: url(./images/about-myself-background-desktop.png);
+    background-size: contain;
+  }
+
+  #contact {
+    background-image: url(./images/contact-form-desktop-shapes-background.png);
+    background-size: contain;
   }
 }
