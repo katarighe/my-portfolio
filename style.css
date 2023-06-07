@@ -416,7 +416,7 @@ input::placeholder {
 }
 
 /* Desktop web version */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   #introduction {
     background-image: url(./images/header-shapes-desktop.png);
     background-size: contain;
@@ -425,7 +425,7 @@ input::placeholder {
   .headline {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 4rem;
+    margin: 0 auto;
   }
 
   .works {
@@ -464,14 +464,19 @@ input::placeholder {
     padding: 8.8rem;
   }
 
-  .about_myself {
-    display: flex;
-    padding: 7.125rem;
-  }
-
   #about {
     background-image: url(./images/about-myself-background-desktop.png);
     background-size: contain;
+  }
+
+  .about-me {
+    display: flex;
+    position: relative;
+  }
+
+  .about_myself {
+    display: flex;
+    padding: 7.125rem;
   }
 
   #contact {
