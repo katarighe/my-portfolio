@@ -335,3 +335,75 @@ p {
     }
   }
 }
+
+#contact {
+  background-color: var(--primaryColor);
+  background-size: contain;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  border-top-left-radius: 8rem;
+  padding: 8rem 0;
+  text-align: center;
+  background-image: url(./images/contact_form_shapes-mobile_2x.png);
+}
+
+#contact h2 {
+  color: #fff;
+}
+
+.contact_desc {
+  color: #ebebff;
+  margin: 1rem 3rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 280px;
+  height: 48px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+input::placeholder {
+  color: #172b4d;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+#message {
+  min-width: 280px;
+  border-radius: 10px;
+  resize: none;
+}
+
+#message::placeholder {
+  max-width: 327px;
+  height: 48px;
+  padding: 1rem;
+  color: #b3bac5;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 6px 6px;
+  position: absolute;
+  letter-spacing: 0.03em;
+  height: 48px;
+  left: 48px;
+  border: none;
+  color: #6070ff;
+  background-color: white;
+  font-size: 17px;
+  line-height: 24px;
+  max-width: 142px;
+}
