@@ -359,6 +359,7 @@ p {
 .form {
   display: flex;
   flex-direction: column;
+  padding-left: 1rem;
 }
 
 input {
@@ -367,27 +368,31 @@ input {
   border-radius: 10px;
   margin-bottom: 1rem;
   border: none;
+  padding-left: 1rem;
 }
 
 input::placeholder {
   color: #172b4d;
   font-size: 1rem;
   padding: 0 1rem;
+  padding-left: 0.1rem;
 }
 
 #message {
   min-width: 280px;
   border-radius: 10px;
   resize: none;
+  padding-left: 1rem;
 }
 
 #message::placeholder {
   max-width: 327px;
   height: 48px;
-  padding: 1rem;
+  padding: 0.5rem;
   color: #b3bac5;
   font-size: 15px;
   line-height: 24px;
+  padding-left: 0.1rem;
 }
 
 .form .btn {
