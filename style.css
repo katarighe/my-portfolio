@@ -1,4 +1,4 @@
-/* Import "Poppins" font */
+/* Poppins" font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /* Main */
@@ -427,7 +427,7 @@ input::placeholder {
 
 .form .btn {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
   margin: 1rem 0;
   padding: 6px 6px;
@@ -435,15 +435,17 @@ input::placeholder {
   letter-spacing: 0.03em;
   height: 48px;
   left: 48px;
-  border: none;
   color: #6070ff;
   background-color: white;
   font-size: 17px;
   line-height: 24px;
   max-width: 142px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
 }
 
-/* Desktop web version */
+/* Desktop - 768px */
 @media only screen and (min-width: 768px) {
   #introduction {
     background-image: url(./images/header-shapes-desktop.png);
@@ -497,6 +499,7 @@ input::placeholder {
     margin: 0 auto;
   }
 
+  /* Works - 768px */
   .works {
     height: 358px;
     margin: 3rem 0;
@@ -533,6 +536,7 @@ input::placeholder {
     padding: 8.8rem;
   }
 
+  /* About - 768px */
   #about {
     background-image: url(./images/about-myself-background-desktop.png);
     background-size: contain;
@@ -548,12 +552,14 @@ input::placeholder {
     padding: 7.125rem;
   }
 
+  /* Contact - 768px */
   .contact {
     background-image: url(./images/contact-form-desktop-shapes-background.png);
     background-size: contain;
   }
 }
 
+/* Desktop - 1024px */
 @media only screen and (min-width: 1024px) {
   #introduction {
     background-image: url(./images/header-shapes-desktop.png);
@@ -579,7 +585,7 @@ input::placeholder {
     margin-top: 0.6rem;
   }
 
-  /* About Myself Desktop */
+  /* About - 1024px */
   .about {
     display: grid;
     grid-template-columns: 1fr;
@@ -620,6 +626,7 @@ input::placeholder {
     color: #344563;
   }
 
+  /* Contact - 1024px */
   .contact_desc {
     font-size: 20px;
     line-height: 28px;
@@ -662,9 +669,9 @@ input::placeholder {
     line-height: 24px;
   }
 
-  .form .btn {
+  #form .btn {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
     margin: 1rem 0;
     padding: 6px 6px;
@@ -672,11 +679,13 @@ input::placeholder {
     letter-spacing: 0.03em;
     height: 48px;
     left: 48px;
-    border: none;
     color: #6070ff;
     background-color: white;
     font-size: 17px;
     line-height: 24px;
     max-width: 142px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
   }
 }
