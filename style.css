@@ -115,6 +115,34 @@ p {
   line-height: 24px;
 }
 
+.menuBar {
+  display: none;
+}
+
+.menu a {
+  width: 4.75rem;
+  height: 1.25rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  color: #6070ff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu img {
+  width: auto;
+  height: auto;
+}
+
 /* Mobile website mode */
 @media screen and (min-width: 375px) {
   #part1 {
@@ -422,9 +450,50 @@ input::placeholder {
     background-size: contain;
   }
 
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menuBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menuFlex {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    color: #343563;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    margin-right: 2rem;
+  }
+
+  .menuBar a {
+    width: 4.75rem;
+    height: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    color: #6070ff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
   .headline {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin: 0 auto;
   }
 
@@ -482,5 +551,31 @@ input::placeholder {
   #contact {
     background-image: url(./images/contact-form-desktop-shapes-background.png);
     background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #introduction {
+    background-image: url(./images/header-shapes-desktop.png);
+    background-size: contain;
+  }
+
+  .headline {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 700px;
+  }
+
+  .headline p {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .connect {
+    margin-bottom: 0;
+  }
+
+  .social_icons_ul {
+    margin-top: 0.6rem;
   }
 }
