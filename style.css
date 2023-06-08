@@ -364,6 +364,7 @@ p {
             width: 48px;
             height: 48px;
           }
+
         }
       }
     }
@@ -450,6 +451,23 @@ input::placeholder {
   #introduction {
     background-image: url(./images/header-shapes-desktop.png);
     background-size: contain;
+  }
+
+  .headline {
+    padding-top: 50px;
+    padding-right: 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 700px;
+  }
+
+  .headline p {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .social_icons {
+    margin-top: 0.6rem;
   }
 
   body {
@@ -542,6 +560,11 @@ input::placeholder {
     background-size: contain;
   }
 
+  .abt-1 {
+    display: flex;
+    flex-direction: row;
+  }
+
   .about-me {
     display: flex;
     position: relative;
@@ -552,121 +575,14 @@ input::placeholder {
     padding: 7.125rem;
   }
 
+  .list_img {
+
+  }
+
   /* Contact - 768px */
   .contact {
     background-image: url(./images/contact-form-desktop-shapes-background.png);
     background-size: contain;
-  }
-}
-
-/* Desktop - 1024px */
-@media only screen and (min-width: 1024px) {
-  #introduction {
-    background-image: url(./images/header-shapes-desktop.png);
-    background-size: contain;
-  }
-
-  .headline {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 700px;
-  }
-
-  .headline p {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .connect {
-    margin-bottom: 0;
-  }
-
-  .social_icons_ul {
-    margin-top: 0.6rem;
-  }
-
-  /* About - 1024px */
-  .about {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 700px;
-  }
-
-  .about p {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .lets_connect {
-    margin-bottom: 0;
-  }
-
-  .social_icons {
-    margin-top: 0.6rem;
-  }
-
-  .about_myself {
-    background-color: #fff;
-    padding: 5rem 2rem;
-    border-top-right-radius: 5rem;
-  }
-
-  .about_myself h1 {
-    margin-top: 30.4%;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 3.25rem;
-    color: #172b4d;
-  }
-
-  .about_myself p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #344563;
-  }
-
-  /* Contact - 1024px */
-  .contact_desc {
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    color: #ebebff;
-    margin-bottom: 2rem;
-  }
-
-  .form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  input {
-    width: 447px;
-    height: 48px;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    border: none;
-  }
-
-  .input::placeholder {
-    color: #172b4d;
-    font-size: 1rem;
-    padding: 0 1rem;
-  }
-
-  #message {
-    min-width: 447px;
-    border-radius: 10px;
-    resize: none;
-  }
-
-  #message::placeholder {
-    max-width: 327px;
-    height: 48px;
-    padding: 1rem;
-    color: #b3bac5;
-    font-size: 15px;
-    line-height: 24px;
   }
 
   .form .btn {
@@ -675,8 +591,6 @@ input::placeholder {
     text-align: center;
     margin: 1rem 0;
     padding: 6px 6px;
-
-    /* position: absolute; */
     letter-spacing: 0.03em;
     height: 48px;
     left: 48px;
@@ -689,26 +603,5 @@ input::placeholder {
     order: 3;
     flex-grow: 0;
     margin-right: 10rem;
-  }
-}
-
-/* Desktop - 1280px */
-@media only screen and (min-width: 1280px) {
-  #introduction {
-    background-image: url(./images/header-shapes-desktop.png);
-    background-size: contain;
-  }
-
-  .headline {
-    padding-top: 100px;
-    padding-right: 200px;
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 700px;
-  }
-
-  .headline p {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
   }
 }
