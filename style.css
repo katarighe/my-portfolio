@@ -371,7 +371,7 @@ p {
 }
 
 /* Contact Me */
-#contact {
+.contact {
   background-color: var(--primaryColor);
   background-size: contain;
   background-position: 100% 100%;
@@ -382,7 +382,7 @@ p {
   background-image: url(./images/contact_form_shapes-mobile_2x.png);
 }
 
-#contact h2 {
+.contact h2 {
   color: #fff;
 }
 
@@ -548,7 +548,7 @@ input::placeholder {
     padding: 7.125rem;
   }
 
-  #contact {
+  .contact {
     background-image: url(./images/contact-form-desktop-shapes-background.png);
     background-size: contain;
   }
