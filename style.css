@@ -669,13 +669,14 @@ input::placeholder {
     line-height: 24px;
   }
 
-  #form .btn {
+  .form .btn {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    text-align: center;
     margin: 1rem 0;
     padding: 6px 6px;
-    position: absolute;
+
+    /* position: absolute; */
     letter-spacing: 0.03em;
     height: 48px;
     left: 48px;
@@ -687,5 +688,27 @@ input::placeholder {
     flex: none;
     order: 3;
     flex-grow: 0;
+    margin-right: 10rem;
+  }
+}
+
+/* Desktop - 1280px */
+@media only screen and (min-width: 1280px) {
+  #introduction {
+    background-image: url(./images/header-shapes-desktop.png);
+    background-size: contain;
+  }
+
+  .headline {
+    padding-top: 100px;
+    padding-right: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 700px;
+  }
+
+  .headline p {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
