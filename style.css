@@ -324,7 +324,7 @@ button:active {
   }
 }
 
-/* Mobile (Works) */
+/* Mobile (About Me) */
 #about {
   display: grid;
   padding: 114px 24px;
@@ -460,7 +460,7 @@ input::placeholder {
   margin: center;
 }
 
-/* Desktop - 768px */
+/* Desktop (Introduction & Header) */
 @media screen and (min-width: 768px) {
   #introduction {
     background-image: url(./images/header-shapes-desktop.png);
@@ -584,7 +584,7 @@ input::placeholder {
     margin-top: 3.2rem;
   }
 
-  /* Desktop (About) */
+  /* Desktop (About Me) */
   #about {
     background-image: url(./images/about-myself-background-desktop.png);
     background-size: contain;
@@ -647,7 +647,7 @@ input::placeholder {
     display: none;
   }
 
-  /* Contact - 768px */
+  /* Mobile (Contact) */
   .contact {
     background-image: url(./images/contact-form-desktop-shapes-background.png);
     background-size: contain;
