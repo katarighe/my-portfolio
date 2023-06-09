@@ -457,8 +457,8 @@ input::placeholder {
   }
 
   .headline {
-    padding-top: 10px;
-    padding-right: 1px;
+    padding-top: 50px;
+    padding-right: 100px;
     display: grid;
     grid-template-columns: 1fr;
     width: 700px;
