@@ -360,6 +360,7 @@ p {
           gap: 1rem;
 
           .list_img {
+            display: flex;
             padding-left: 10px;
             width: 48px;
             height: 48px;
@@ -368,6 +369,10 @@ p {
       }
     }
   }
+}
+
+.list_img_desktop {
+  display: none;
 }
 
 /* Contact Me */
@@ -517,13 +522,10 @@ input::placeholder {
   }
 
   /* Works - 768px */
-  .works {
-    height: 358px;
-    margin: 3rem 0;
-    display: flex;
-    align-items: center;
-    max-width: 800px;
-    background-color: white;
+  #works {
+    display: grid;
+    padding: 114px 24px;
+    gap: 88px;
   }
 
   .works_card {
@@ -574,10 +576,14 @@ input::placeholder {
     padding: 7.125rem;
   }
 
+  .myskills {
+    margin-top: -2rem;
+  }
+
   .languages {
-    width: 100%;
-    display: grid;
+    display: flex;
     align-items: center;
+  }
 
     .lan_head {
       width: 100%;
@@ -587,15 +593,18 @@ input::placeholder {
       padding: 1rem 0.1px;
       align-items: center;
     }
-
+    
     .lan_list {
-      display: grid;
-      align-items: center;
+      display: flex;
       gap: 12px;
       width: 100%;
-
+      list-style-type: none;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    
       .lan_list_detail {
-        display: grid;
+        display: flex;
         align-items: center;
         width: 100%;
         grid-auto-flow: column;
@@ -604,6 +613,22 @@ input::placeholder {
         background: #f7f7f9;
         border-radius: 8px;
         gap: 1rem;
+      }
+
+      .list_img {
+        display: none;
+      }
+
+      .list_img_desktop {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        width: 122px;
+        height: 120px;
+        top: 12px;
+        left: 12px;
+        border-radius: 8px;
+        max-width: 50%;
       }
 
       /* Contact - 768px */
@@ -633,5 +658,4 @@ input::placeholder {
 }
     }
   }
-}
 }
