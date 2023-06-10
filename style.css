@@ -535,22 +535,30 @@ input::placeholder {
     padding-top: 9.86vw;
     padding-bottom: 9.86vw;
     grid-auto-flow: dense;
+    flex-direction: row;
   }
 
   .works_card {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     padding: 16px;
     grid-gap: 12px;
     background: white;
     border: 1px solid #def1e6;
-    border-radius: 16px;
+    border-radius: 24px;
+    margin-bottom: 5rem;
+    box-shadow: 5px 5px 10px 5px rgb(217, 213, 213, 0.5);
+    column-gap: 1rem;
   }
 
   /* Desktop (About Me) */
   #about {
     background-image: url(./images/about-myself-background-desktop.png);
     background-size: contain;
+    padding: 146px;
+    gap: 0;
   }
 
   #about .center {
@@ -563,6 +571,7 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     width: 100%;
+    gap: 40px;
   }
 
   .about-me {
@@ -572,8 +581,17 @@ input::placeholder {
 
   .about_myself {
     display: flex;
-    margin-top: 1rem;
-    margin-left: 3%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.1px;
+    gap: 24px;
+    width: 447px;
+    height: 311px;
+    left: 143px;
+  }
+
+  .about_myself h1 {
+    margin-top: 0;
   }
 
   .resume {
@@ -581,17 +599,17 @@ input::placeholder {
   }
 
   .myskills {
-    width: 100%;
+    width: 400px;
     display: grid;
     align-items: center;
   }
 
   .lan_head {
-    width: 80%;
+    width: 100%;
     grid-auto-flow: column;
     justify-content: space-between;
     display: grid;
-    padding: 1rem 0.1px;
+    padding: 0;
     align-items: center;
   }
 
