@@ -80,7 +80,7 @@ Mohamed Aden Ighe: My personal portfolio is a...
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> We will add a Live Demo feature in the future releases. 
+> The Live Demo of this project is available now. Please visit https://katarighe.github.io/my-portfolio/ for the live demo my project. 
 
 <!-- - [Live Demo Link](https://google.com) -->
 
