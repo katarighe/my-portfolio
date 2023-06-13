@@ -188,7 +188,7 @@ Example:
 
 - GitHub: [@katarighe](https://github.com/katarighe)
 - Twitter: [@katarighe](https://twitter.com/katarighe)
-- LinkedIn: [Mohamed Aden Ighe](https://linkedin.com/in/katarighe)
+- LinkedIn: [@mighe](https://linkedin.com/in/mighe)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
