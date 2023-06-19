@@ -75,8 +75,8 @@ p {
 }
 
 .menu a {
-  width: 4.75rem;
-  height: 1.25rem;
+  /* width: 4.75rem;
+  height: 1.25rem; */
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   line-height: 1.25rem;
@@ -89,7 +89,7 @@ p {
 
 .menu {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   cursor: pointer;
 }
@@ -108,6 +108,7 @@ p {
   bottom: 0;
   background: rgba(96, 112, 255, 0.9);
   color: #fff;
+  backdrop-filter: blur(4px);
 }
 
 .mobile-menu .mobile-ul {
