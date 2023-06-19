@@ -91,11 +91,37 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .menu img {
   width: auto;
   height: auto;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(96, 112, 255, 0.9);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.mobile-menu .mobile-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 70px;
+}
+
+.mobile-menu i {
+  float: right;
+  padding: 30px 50px;
 }
 
 /* Buttons */
