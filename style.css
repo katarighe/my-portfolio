@@ -108,7 +108,7 @@ p {
   bottom: 0;
   background: rgba(96, 112, 255, 0.9);
   color: #fff;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
   mix-blend-mode: multiply;
 }
 
