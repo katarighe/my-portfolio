@@ -24,7 +24,9 @@ links.forEach((link) => {
   });
 });
 
-// Mobile Pop Up
+// Pop Up
+const card = document.getElementById('works');
+
 const projectInfos = [
   {
     id: 0,
@@ -59,3 +61,45 @@ const projectInfos = [
     technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
   },
 ];
+
+for (let i = 0; i < projectInfos.length; i += 1) {
+  const projectCard = document.createElement('div');
+  projectCard.classList.add('project-card');
+  let infoList = '';
+  for (let j = 0; j < projectInfos[i].info.length; j += 1) {
+    infoList += `<li>${projectInfos[i].info[j]}</li>`;
+  }
+
+  let technologiesList = '';
+  for (let k = 0; k < projectInfos[i].technologies.length; k += 1) {
+    technologiesList += `<li>${projectInfos[i].technologies[k]}</li>`;
+  }
+  projectCard.innerHTML = `
+      <div class="works_card">
+      <img src="${projectInfos[i].image}" class="works_img">
+      <div class="works_card_detail">
+        <div class="works_card_title">
+          <h2>${projectInfos[i].title}</h2>
+        <div class="works_card_history">
+          <ul>
+            ${infoList}
+          </ul>
+        </div>
+        </div>
+        <div class="works_card_description">
+          <p>${projectInfos[i].description}</p>
+        </div>
+        <div class="works_card_tags">
+          <ul>
+            ${technologiesList}
+          </ul>
+        </div>
+        <div class="works_card_action">
+        <button type="button" class="project-btn">See Project</button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  card.appendChild(projectCard);
+}
