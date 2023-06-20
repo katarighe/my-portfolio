@@ -103,3 +103,49 @@ for (let i = 0; i < projectInfos.length; i += 1) {
 
   card.appendChild(projectCard);
 }
+
+const popCard = document.querySelector('.popCard');
+const projectButtons = document.querySelectorAll('.project-btn');
+
+projectButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    popCard.style.display = 'block';
+
+    const project = projectInfos[index];
+    const popCardContent = popCard.querySelector('.modal-body');
+
+    popCardContent.innerHTML = `
+      <div class='top'>
+        <div class='title'>
+          <h2>${project.title}</h2>
+          <ul>
+            ${project.info.map((info) => `<li>${info}</li>`).join('')}
+          </ul>
+        </div>
+        <div class='close-menu'>
+          <i class="close-menu fas fa-times"></i>
+        </div>
+      </div>
+      <div class='middle'>
+        <img src="${project.image}" class="works_img">
+      </div>
+      <div class='bottom'>
+        <div class='card-description'>
+          <p>${project.description}</p>
+        </div>
+        <div class='card-info'>
+          <ul>
+            ${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}
+          </ul>
+          <button>See Live</button>
+          <button>See Source</button>
+        </div>
+      </div>
+    `;
+  });
+});
+
+const closeButton = popCard.querySelector('.close-menu');
+closeButton.addEventListener('click', () => {
+  popCard.style.display = 'none';
+});
