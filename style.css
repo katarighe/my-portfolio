@@ -742,7 +742,7 @@ input::placeholder {
 
 /* Popup JavaScript */
 .popCard {
-  display: flex;
+  display: none;
   position: fixed;
   flex-direction: column;
   height: 80vh;
