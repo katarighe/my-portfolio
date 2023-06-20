@@ -88,12 +88,20 @@ p {
 }
 
 .popCard {
-  display: none;
+  display: flex;
   position: fixed;
+  flex-direction: column;
+  height: 80vh;
+  width: 80vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9999;
+  padding: 16px;
+  grid-gap: 12px;
+  background: white;
+  border: 1px solid #def1e6;
+  border-radius: 16px;
 }
 
 #modal-overlay {
