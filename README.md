@@ -182,7 +182,6 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Mohamed Aden Ighe**
 
@@ -195,8 +194,6 @@ Example:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> We will add 3 additional new features into this project. 
 
 - [ ] **Projects**
 - [ ] **Contact Form**
