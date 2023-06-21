@@ -138,8 +138,8 @@ projectButtons.forEach((button, index) => {
           <ul>
             ${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}
           </ul>
-          <button class="modal-button">See Live</button>
-          <button class="modal-button">See Source</button>
+          <button class="modal-button">See live</button>
+          <button class="modal-button">See source</button>
         </div>
       </div>
     `;
