@@ -834,3 +834,10 @@ input::placeholder {
 .card-p {
   margin-top: 2.25rem;
 }
+
+.close-btn {
+  float: right;
+  padding-bottom: 1.25rem;
+  width: 24px !important;
+  height: 24px !important;
+}

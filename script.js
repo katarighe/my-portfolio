@@ -124,7 +124,7 @@ projectButtons.forEach((button, index) => {
           </ul>
         </div>
         <div class='close-menu'>
-          <i id="close-menu" class="close-menu fas fa-times"></i>
+          <img src="./images/icons/close.svg" id="close-menu" class="close-btn"></i>
         </div>
       </div>
       <div class='middle'>
