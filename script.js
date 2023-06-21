@@ -155,9 +155,15 @@ popCardContent.addEventListener('click', (e) => {
   e.preventDefault();
 });
 
+
 popCard.addEventListener('click', () => {
   popCard.style.display = 'none';
   popCard.remove();
+});
+
+$close-popup.addEventListener('click', () => {
+  popupScrollLock();
+  $popCard.close();
 });
 
 popCard.appendChild(popCard);
