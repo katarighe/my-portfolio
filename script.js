@@ -165,3 +165,5 @@ popCard.addEventListener('click', () => {
   popCard.style.display = 'none';
   popCard.remove();
 });
+
+popCard.appendChild(popCard);
