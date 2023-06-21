@@ -34,7 +34,7 @@ const projectInfos = [
     title: 'Tonic',
     info: ['CANOPY', 'Back End Dev', 2015],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['html', 'css', 'javascript'],
+    technologies: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 1,
@@ -42,7 +42,7 @@ const projectInfos = [
     title: 'Multi-Post Stories',
     info: ['FACEBOOK', 'Full Stack Dev', 2015],
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
+    technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ const projectInfos = [
     title: 'Facebook 360',
     info: ['FACEBOOK', 'Full Stack Dev', 2015],
     description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
+    technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
   },
   {
     id: 3,
@@ -58,7 +58,7 @@ const projectInfos = [
     title: 'Uber Navigation',
     info: ['Uber', 'Lead Developer', 2018],
     description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
+    technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
   },
 ];
 
@@ -113,6 +113,7 @@ projectButtons.forEach((button, index) => {
 
     const project = projectInfos[index];
     const popCardContent = popCard.querySelector('.modal-body');
+    document.body.style.overflow = 'hidden';
 
     popCardContent.innerHTML = `
       <div class='top'>
@@ -123,7 +124,7 @@ projectButtons.forEach((button, index) => {
           </ul>
         </div>
         <div class='close-menu'>
-          <i class="close-menu fas fa-times"></i>
+          <img src="./images/icons/close.svg" id="close-popup" class="close-btn"></i>
         </div>
       </div>
       <div class='middle'>
@@ -137,15 +138,19 @@ projectButtons.forEach((button, index) => {
           <ul>
             ${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}
           </ul>
-          <button>See Live</button>
-          <button>See Source</button>
+          <button class="modal-button">See live</button>
+          <button class="modal-button">See source</button>
         </div>
       </div>
     `;
   });
 });
 
-const closeButton = popCard.querySelector('.close-menu');
-closeButton.addEventListener('click', () => {
-  popCard.style.display = 'none';
+const popCardContent = popCard.querySelector('.modal-body');
+popCardContent.addEventListener('click', (e) => {
+  if (e.target.id === 'close-popup') {
+    popCard.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+  e.preventDefault();
 });
