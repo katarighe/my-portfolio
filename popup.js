@@ -6,6 +6,8 @@ const projectInfos = [
     image: 'images/works/SnapshootPortfolio.svg',
     title: 'Tonic',
     info: ['CANOPY', 'Back End Dev', 2015],
+    liveLink: '',
+    githubLink: '',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
   },
@@ -14,6 +16,8 @@ const projectInfos = [
     image: 'images/works/tonic.svg',
     title: 'Multi-Post Stories',
     info: ['FACEBOOK', 'Full Stack Dev', 2015],
+    liveLink: '',
+    githubLink: '',
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
   },
@@ -22,6 +26,8 @@ const projectInfos = [
     image: 'images/works/multiPostStories.svg',
     title: 'Facebook 360',
     info: ['FACEBOOK', 'Full Stack Dev', 2015],
+    liveLink: '',
+    githubLink: '',
     description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
   },
@@ -30,6 +36,8 @@ const projectInfos = [
     image: 'images/works/multiPostStoriess.svg',
     title: 'Uber Navigation',
     info: ['Uber', 'Lead Developer', 2018],
+    liveLink: '',
+    githubLink: '',
     description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
   },
@@ -111,8 +119,11 @@ projectButtons.forEach((button, index) => {
           <ul>
             ${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}
           </ul>
-          <button class="modal-button">See live</button>
-          <button class="modal-button">See source</button>
+          <hr>
+          <div class="modal-buttons">
+            <button class="modal-button">See live<span><img src="./images/icons/live-project-icon.svg" alt="Live Icon" /></span></button>
+            <button class="modal-button">See source<span><img src="./images/icons/github-repo-icon.svg" alt="Github Icon" /></span></button>
+          </div>
         </div>
       </div>
     `;
