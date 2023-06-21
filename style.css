@@ -768,10 +768,10 @@ input::placeholder {
   box-shadow: 0.1px 48px 48px rgba(37, 47, 137, 0.08);
 }
 
-.modal-image {
+.works_img {
   width: 100%;
-  height: 60vh;
-  justify-content: space-around;
+  height: 100%;
+  justify-content: center;
   border-radius: 8px;
   object-fit: cover;
   overflow: hidden;
@@ -781,8 +781,8 @@ input::placeholder {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9998;
   display: none;
@@ -830,9 +830,9 @@ input::placeholder {
 
 .close-btn {
   float: right;
-  padding-bottom: 1.25rem;
-  width: 12px !important;
-  height: 12px !important;
+  padding-top: 3rem;
+  width: 20px !important;
+  height: 20px !important;
   top: 6px !important;
   left: 6px !important;
 }

@@ -117,14 +117,14 @@ projectButtons.forEach((button, index) => {
 
     popCardContent.innerHTML = `
       <div class='top'>
+      <div class='close-menu'>
+      <img src="./images/icons/close.svg" id="close-popup" class="close-btn"></i>
+    </div>
         <div class='title'>
           <h2>${project.title}</h2>
           <ul>
             ${project.info.map((info) => `<li>${info}</li>`).join('')}
           </ul>
-        </div>
-        <div class='close-menu'>
-          <img src="./images/icons/close.svg" id="close-popup" class="close-btn"></i>
         </div>
       </div>
       <div class='middle'>
