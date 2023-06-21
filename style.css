@@ -743,19 +743,33 @@ input::placeholder {
 /* Popup JavaScript */
 .popCard {
   display: none;
+  width: 100%;
+  height: 100%;
   position: fixed;
-  flex-direction: column;
-  height: 80vh;
-  width: 80vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  padding: 16px;
-  grid-gap: 12px;
-  background: white;
-  border: 1px solid #def1e6;
-  border-radius: 16px;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #c1c7d0(0, 0, 0, 0.9);
+  backdrop-filter: blur(15px);
+}
+
+.modal-body {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 1.25rem;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 8px;
+}
+
+.modal-image {
+  width: 100%;
+  height: 60vh;
+  justify-content: space-around;
+  border-radius: 8px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 #modal-overlay {
@@ -769,4 +783,46 @@ input::placeholder {
   display: none;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+}
+
+.modal-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #6070ff;
+  background: #fff;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #7f8cff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-button:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
+}
+
+.modal-button:active {
+  background: #6070ff;
+  border-radius: 4px;
+}
+
+.mobile-button {
+  display: none;
+}
+
+.modal-buttons {
+  display: flex;
+}
+
+.card-p {
+  margin-top: 2.25rem;
 }

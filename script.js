@@ -34,7 +34,7 @@ const projectInfos = [
     title: 'Tonic',
     info: ['CANOPY', 'Back End Dev', 2015],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['html', 'css', 'javascript'],
+    technologies: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 1,
@@ -42,7 +42,7 @@ const projectInfos = [
     title: 'Multi-Post Stories',
     info: ['FACEBOOK', 'Full Stack Dev', 2015],
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
+    technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ const projectInfos = [
     title: 'Facebook 360',
     info: ['FACEBOOK', 'Full Stack Dev', 2015],
     description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
+    technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
   },
   {
     id: 3,
@@ -58,7 +58,7 @@ const projectInfos = [
     title: 'Uber Navigation',
     info: ['Uber', 'Lead Developer', 2018],
     description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
+    technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
   },
 ];
 
@@ -137,8 +137,8 @@ projectButtons.forEach((button, index) => {
           <ul>
             ${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}
           </ul>
-          <button>See Live<img src="./images/icons/live-icon.svg"></button>
-          <button>See Source<img src="./images/icons/Vector.svg"></button>
+          <button class="modal-button">See Live<img src="./images/icons/live-icon.svg"></button>
+          <button class="modal-button">See Source<img src="./images/icons/Vector.svg"></button>
         </div>
       </div>
     `;
@@ -153,4 +153,9 @@ closeButton.addEventListener('click', () => {
 $closeModal.addEventListener('click', () => {
   popupScrollLock();
   $modal.close();
+});
+
+popCard.addEventListener('click', () => {
+  popCard.style.display = 'none';
+  popCard.remove();
 });
