@@ -124,7 +124,7 @@ projectButtons.forEach((button, index) => {
           </ul>
         </div>
         <div class='close-menu'>
-          <img src="./images/icons/close.svg" id="close-menu" class="close-btn"></i>
+          <img src="./images/icons/close.svg" id="close-popup" class="close-btn"></i>
         </div>
       </div>
       <div class='middle'>
@@ -148,7 +148,7 @@ projectButtons.forEach((button, index) => {
 
 const popCardContent = popCard.querySelector('.modal-body');
 popCardContent.addEventListener('click', (e) => {
-  if (e.target.id === 'close-menu') {
+  if (e.target.id === 'close-popup') {
     popCard.style.display = 'none';
     document.body.style.overflow = 'auto';
   }
