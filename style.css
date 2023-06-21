@@ -351,6 +351,14 @@ button:active {
   margin-top: 3.2rem;
 }
 
+#modal-button {
+  display: none;
+}
+
+.mobile-buttons {
+  display: flex;
+}
+
 /* Mobile (About Me) */
 #about {
   display: grid;

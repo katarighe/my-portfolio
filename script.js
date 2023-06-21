@@ -121,6 +121,10 @@ projectButtons.forEach((button, index) => {
           <ul>
             ${project.info.map((info) => `<li>${info}</li>`).join('')}
           </ul>
+          <div class="modal-buttons">
+          <button class="modal-button">See Live</button>
+          <button class="modal-button">See Source</button>
+        </div>
         </div>
         <div class='close-menu'>
           <i class="close-menu fas fa-times"></i>
@@ -137,8 +141,10 @@ projectButtons.forEach((button, index) => {
           <ul>
             ${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}
           </ul>
-          <button class="modal-button">See Live<img src="./images/icons/live-icon.svg"></button>
-          <button class="modal-button">See Source<img src="./images/icons/Vector.svg"></button>
+          <div class="mobile-buttons">
+          <button class="modal-button">See Live</button>
+          <button class="modal-button">See Source</button>
+          </div>
         </div>
       </div>
     `;
