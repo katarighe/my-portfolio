@@ -155,11 +155,6 @@ popCardContent.addEventListener('click', (e) => {
   e.preventDefault();
 });
 
-$closeModal.addEventListener('click', () => {
-  popupScrollLock();
-  $modal.close();
-});
-
 popCard.addEventListener('click', () => {
   popCard.style.display = 'none';
   popCard.remove();
