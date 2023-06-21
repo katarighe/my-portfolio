@@ -355,10 +355,6 @@ button:active {
   display: none;
 }
 
-.mobile-buttons {
-  display: flex;
-}
-
 /* Mobile (About Me) */
 #about {
   display: grid;
@@ -822,10 +818,6 @@ input::placeholder {
 .modal-button:active {
   background: #6070ff;
   border-radius: 4px;
-}
-
-.mobile-button {
-  display: none;
 }
 
 .modal-buttons {
