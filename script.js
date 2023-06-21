@@ -113,6 +113,7 @@ projectButtons.forEach((button, index) => {
 
     const project = projectInfos[index];
     const popCardContent = popCard.querySelector('.modal-body');
+    document.body.style.overflow = 'hidden';
 
     popCardContent.innerHTML = `
       <div class='top'>
