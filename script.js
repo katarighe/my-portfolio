@@ -121,13 +121,9 @@ projectButtons.forEach((button, index) => {
           <ul>
             ${project.info.map((info) => `<li>${info}</li>`).join('')}
           </ul>
-          <div class="modal-buttons">
-          <button class="modal-button">See Live</button>
-          <button class="modal-button">See Source</button>
-        </div>
         </div>
         <div class='close-menu'>
-          <i class="close-menu fas fa-times"></i>
+          <i id="close-menu" class="close-menu fas fa-times"></i>
         </div>
       </div>
       <div class='middle'>
@@ -141,19 +137,21 @@ projectButtons.forEach((button, index) => {
           <ul>
             ${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}
           </ul>
-          <div class="mobile-buttons">
           <button class="modal-button">See Live</button>
           <button class="modal-button">See Source</button>
-          </div>
         </div>
       </div>
     `;
   });
 });
 
-const closeButton = popCard.querySelector('.close-menu');
-closeButton.addEventListener('click', () => {
-  popCard.style.display = 'none';
+const popCardContent = popCard.querySelector('.modal-body');
+popCardContent.addEventListener('click', (e) => {
+  if (e.target.id === 'close-menu') {
+    popCard.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+  e.preventDefault();
 });
 
 $closeModal.addEventListener('click', () => {
