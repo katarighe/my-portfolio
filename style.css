@@ -314,7 +314,7 @@ button:active {
 .works_card_detail {
   display: grid;
   grid-gap: 12px;
-  width: 100%;
+  gap: 20px;
 }
 
 .works_card_title {
@@ -330,6 +330,18 @@ button:active {
   gap: 6px;
 }
 
+.works_card_history ul {
+  display: flex;
+  gap: 12px;
+}
+
+.works_card_history ul li {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
 .works_card_history_detail {
   padding: 8px 0.2px;
 }
@@ -340,6 +352,70 @@ button:active {
   align-items: center;
   justify-content: start;
   gap: 8px;
+}
+
+.works_card_tags ul {
+  display: flex;
+  gap: 6px;
+}
+
+.works_card_tags ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.title ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.bottom {
+  display: flex;
+  margin-top: 59px;
+  gap: 24px;
+}
+
+.card-description {
+  flex: 2;
+}
+
+.card-info {
+  flex: 1;
+}
+
+.card-info hr {
+  margin: 24px 0;
+}
+
+.card-info ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.card-info ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
 }
 
 .tag_work {
@@ -771,7 +847,8 @@ input::placeholder {
 
 .works_img {
   width: 100%;
-  height: 100%;
+  height: 40vh;
+  height: 586px;
   justify-content: center;
   border-radius: 8px;
   object-fit: cover;
@@ -810,6 +887,10 @@ input::placeholder {
   transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+.modal-button span {
+  margin-left: 1rem;
+}
+
 .modal-button:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
@@ -823,6 +904,7 @@ input::placeholder {
 
 .modal-buttons {
   display: flex;
+  gap: 12px;
 }
 
 .card-p {
@@ -831,9 +913,7 @@ input::placeholder {
 
 .close-btn {
   float: right;
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   width: 20px !important;
   height: 20px !important;
-  top: 6px !important;
-  left: 6px !important;
 }
