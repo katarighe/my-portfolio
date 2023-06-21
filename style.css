@@ -922,46 +922,6 @@ input::placeholder {
   margin-top: 2.25rem;
 }
 
-.mobile-button {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  color: #6070ff;
-  background: #fff;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  font-weight: 500;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #7f8cff;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.mobile-button span {
-  margin-left: 1rem;
-}
-
-.mobile-button:hover {
-  background: #6070ff;
-  box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
-  border-radius: 4px;
-}
-
-.mobile-button:active {
-  background: #6070ff;
-  border-radius: 4px;
-}
-
-.mobile-buttons {
-  display: flex;
-  gap: 12px;
-  cursor: pointer;
-}
-
 .close-btn {
   float: right;
   padding-top: 1.5rem;

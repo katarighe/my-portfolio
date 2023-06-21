@@ -124,10 +124,6 @@ projectButtons.forEach((button, index) => {
             <button class="modal-button">See live<span><img src="./images/icons/live-project-icon.svg" alt="Live Icon" /></span></button>
             <button class="modal-button">See source<span><img src="./images/icons/github-repo-icon.svg" alt="Github Icon" /></span></button>
           </div>
-          <div class="mobile-buttons">
-            <button class="mobile-button">See live<span><img src="./images/icons/live-project-icon.svg" alt="Live Icon" /></span></button>
-            <button class="mobile-button">See source<span><img src="./images/icons/github-repo-icon.svg" alt="Github Icon" /></span></button>
-          </div>
         </div>
       </div>
     `;
