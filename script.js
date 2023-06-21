@@ -137,8 +137,8 @@ projectButtons.forEach((button, index) => {
           <ul>
             ${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}
           </ul>
-          <button>See Live</button>
-          <button>See Source</button>
+          <button>See Live<img src="./images/icons/live-icon.svg"></button>
+          <button>See Source<img src="./images/icons/Vector.svg"></button>
         </div>
       </div>
     `;
@@ -148,4 +148,9 @@ projectButtons.forEach((button, index) => {
 const closeButton = popCard.querySelector('.close-menu');
 closeButton.addEventListener('click', () => {
   popCard.style.display = 'none';
+});
+
+$closeModal.addEventListener('click', () => {
+  popupScrollLock();
+  $modal.close();
 });
