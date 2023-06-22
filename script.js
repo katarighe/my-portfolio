@@ -23,3 +23,5 @@ links.forEach((link) => {
     hideMenu();
   });
 });
+
+// Contact Form
