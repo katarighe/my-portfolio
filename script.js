@@ -1,4 +1,3 @@
-// Mobile Menu
 const open = document.querySelector('.open-menu');
 const close = document.querySelector('.close-menu');
 const menu = document.querySelector('.mobile-menu');
@@ -24,7 +23,6 @@ links.forEach((link) => {
   });
 });
 
-// Contact Form
 const form = document.getElementById('myForm');
 
 form.addEventListener('submit', (e) => {
