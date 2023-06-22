@@ -48,7 +48,7 @@ const myStorage = {
   message: '',
 };
 
-myStorage.name = document.getElementById('fullname').value;
+myStorage.name = document.getElementById('name').value;
 myStorage.email = document.getElementById('email').value;
 myStorage.message = document.getElementById('comments').value;
 
@@ -56,6 +56,6 @@ localStorage.setItem('storageInfo', JSON.stringify(myStorage));
 
 const storageObject = JSON.parse(localStorage.getItem('storage-info'));
 
-document.getElementById('fullname').value = storageObject.name;
+document.getElementById('name').value = storageObject.name;
 document.getElementById('email').value = storageObject.email;
 document.getElementById('comments').value = storageObject.message;
