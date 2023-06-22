@@ -935,3 +935,17 @@ input::placeholder {
 }
 
 /* Contact Form */
+.errors {
+  display: block;
+  color: red;
+  margin-top: 5px;
+}
+
+.error {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  box-shadow: 0 0 15px 0 rgba(255, 36, 0, 1);
+}
