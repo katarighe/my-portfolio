@@ -25,3 +25,16 @@ links.forEach((link) => {
 });
 
 // Contact Form
+const form = document.getElementById('myForm')
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = document.getElementsByClassName('errors').value;
+  if (email === email.toLowerCase()) {
+    this.submit();
+  } else {
+    const errorMessage = document.getElementsByClassName('errors');
+    errorMessage.textcontent = 'Sorry, incorrect field';
+    errorMessage.style.display = 'block';
+  }
+  });

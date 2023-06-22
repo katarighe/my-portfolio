@@ -936,9 +936,8 @@ input::placeholder {
 
 /* Contact Form */
 .errors {
-  display: block;
+  display: none;
   color: red;
-  margin-top: 5px;
 }
 
 .error {
