@@ -34,7 +34,7 @@ form.addEventListener('submit', (e) => {
 
   const myStorage = {
     name: document.getElementById('fname').value,
-    email: document.querySelector('.email-input').value,
+    email: email,
     message: document.getElementById('message').value,
   };
 
@@ -55,9 +55,5 @@ window.addEventListener('load', (e) => {
     document.getElementById('fname').value = storageObject.name;
     document.querySelector('.email-input').value = storageObject.email;
     document.getElementById('message').value = storageObject.message;
-  } else {
-    document.getElementById('fname').value = '';
-    document.querySelector('.email-input').value = '';
-    document.getElementById('message').value = '';
   }
 });
