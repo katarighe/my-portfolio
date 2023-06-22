@@ -34,7 +34,7 @@ form.addEventListener('submit', (e) => {
 
   const myStorage = {
     name: document.getElementById('fname').value,
-    email: email,
+    email: document.querySelector('.email-input').value,
     message: document.getElementById('message').value,
   };
 
