@@ -132,9 +132,9 @@ projectButtons.forEach((button, index) => {
 
 const popCardContent = popCard.querySelector('.modal-body');
 popCardContent.addEventListener('click', (e) => {
+  e.preventDefault();
   if (e.target.id === 'close-popup') {
     popCard.style.display = 'none';
     document.body.style.overflow = 'auto';
   }
-  e.preventDefault();
 });
