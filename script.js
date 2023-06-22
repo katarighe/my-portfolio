@@ -25,17 +25,18 @@ links.forEach((link) => {
 });
 
 // Contact Form
-const form = document.getElementById('myForm')
+const form = document.getElementById('myForm');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const email = document.querySelector('.email-input').value;
+  const suggestedEmail = document.querySelector('.email-input').value.toLowerCase();
 
-  if (email === email.toLowerCase()) {
+  if (email === suggestedEmail) {
     form.submit();
-  }  else {
+  } else {
     const errorMessage = document.querySelector('.errors');
-    errorMessage.textcontent = 'Please enter your email in lowercase, e.g. ${correctEmail}';
+    errorMessage.textContent = `Please enter your email in lowercase, e.g. ${suggestedEmail}`;
     errorMessage.style.display = 'block';
   }
-  });
+});
