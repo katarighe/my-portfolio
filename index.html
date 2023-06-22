@@ -222,19 +222,21 @@
     to help with it!</p>
   </div>
   <div class="form">
-  <form action="https://formspree.io/f/mlekylyd" method="post" class="form">
+  <form action="https://formspree.io/f/mlekylyd" method="post" class="form" id="myForm">
     <ul class="form_input">
       <li>
         <input type="text" id="fname" class="contact_name" name="contact_name" placeholder="Enter your name" required maxlength="30" />
         </li>
         <li>
-        <input type="email" id="email" class="contact_email" placeholder="Enter your email" name="contact_email" required/>
+        <input type="email" id="email" class="contact_email email-input" placeholder="Enter your email" name="contact_email" required/>
         </li>
         <li>
         <textarea id="message" name="contact_message" placeholder="Write your message here...." cols="30" rows="8" maxlength="500" required></textarea>
      </li>
      <div class="contact-btncontainer">
       <button type="submit" class="contact-btn">Get in touch</button></div>
+      <br>
+      <p class="errors" style="color: red; display: none;"></p>
   </ul>
 </form>
 </div>

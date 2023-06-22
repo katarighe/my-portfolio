@@ -23,3 +23,20 @@ links.forEach((link) => {
     hideMenu();
   });
 });
+
+// Contact Form
+const form = document.getElementById('myForm');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = document.querySelector('.email-input').value;
+  const suggestedEmail = document.querySelector('.email-input').value.toLowerCase();
+
+  if (email === suggestedEmail) {
+    form.submit();
+  } else {
+    const errorMessage = document.querySelector('.errors');
+    errorMessage.textContent = `Your form is not sent, please enter your email in lowercase, e.g. ${suggestedEmail}`;
+    errorMessage.style.display = 'block';
+  }
+});
