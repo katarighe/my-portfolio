@@ -40,3 +40,22 @@ form.addEventListener('submit', (e) => {
     errorMessage.style.display = 'block';
   }
 });
+
+// Local Web Storage
+const myStorage = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+myStorage.name = document.getElementById('fullname').value;
+myStorage.email = document.getElementById('email').value;
+myStorage.message = document.getElementById('comments').value;
+
+localStorage.setItem('storageInfo', JSON.stringify(myStorage));
+
+const storageObject = JSON.parse(localStorage.getItem('storage-info'));
+
+document.getElementById('fullname').value = storageObject.name;
+document.getElementById('email').value = storageObject.email;
+document.getElementById('comments').value = storageObject.message;
