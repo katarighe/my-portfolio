@@ -29,12 +29,13 @@ const form = document.getElementById('myForm')
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const email = document.getElementsByClassName('errors').value;
+  const email = document.querySelector('.email-input').value;
+
   if (email === email.toLowerCase()) {
-    this.submit();
-  } else {
-    const errorMessage = document.getElementsByClassName('errors');
-    errorMessage.textcontent = 'Sorry, incorrect field';
+    form.submit();
+  }  else {
+    const errorMessage = document.querySelector('.errors');
+    errorMessage.textcontent = 'Please enter your email in lowercase, e.g. ${correctEmail}';
     errorMessage.style.display = 'block';
   }
   });
