@@ -29,10 +29,19 @@ const form = document.getElementById('myForm');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const email = document.querySelector('.email-input').value;
-  const suggestedEmail = document.querySelector('.email-input').value.toLowerCase();
+
+  const emailInput = document.querySelector('.email-input');
+  const email = emailInput.value;
+  const suggestedEmail = email.toLowerCase();
+
+  const myStorage = {
+    name: document.getElementById('fname').value,
+    email: document.querySelector('.email-input').value,
+    message: document.getElementById('message').value,
+  };
 
   if (email === suggestedEmail) {
+    localStorage.setItem('myStorage', JSON.stringify(myStorage));
     form.submit();
   } else {
     const errorMessage = document.querySelector('.errors');
@@ -41,21 +50,16 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-// Local Web Storage
-const myStorage = {
-  name: '',
-  email: '',
-  message: '',
-};
-
-myStorage.name = document.getElementById('name').value;
-myStorage.email = document.getElementById('email').value;
-myStorage.message = document.getElementById('comments').value;
-
-localStorage.setItem('storageInfo', JSON.stringify(myStorage));
-
-const storageObject = JSON.parse(localStorage.getItem('storage-info'));
-
-document.getElementById('name').value = storageObject.name;
-document.getElementById('email').value = storageObject.email;
-document.getElementById('comments').value = storageObject.message;
+window.addEventListener('load', (e) => {
+  e.preventDefault();
+  const storageObject = JSON.parse(localStorage.getItem('myStorage'));
+  if (storageObject) {
+    document.getElementById('fname').value = storageObject.name;
+    document.querySelector('.email-input').value = storageObject.email;
+    document.getElementById('message').value = storageObject.message;
+  } else {
+    document.getElementById('fname').value = '';
+    document.querySelector('.email-input').value = '';
+    document.getElementById('message').value = '';
+  }
+});
